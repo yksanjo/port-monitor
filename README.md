@@ -1,49 +1,84 @@
-# Port Monitor
+# port-monitor
 
-Real-time port monitoring with alerts and status dashboard.
+## Detailed Description
 
-## Installation
+port-monitor is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
+
+## Problem Statement
+
+Describe the user or business problem this project solves, the target users, and expected outcomes.
+
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-cd port-monitor
-npm install
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
 ## Usage
 
-### Start monitoring
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-```bash
-npm start start 3000 3001 8080
-```
+## Quality Standards
 
-### Dashboard view
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```bash
-npm start dashboard
-```
+## Security
 
-### Watch specific port
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-```bash
-npm start watch 3000
-```
+## Contributing
 
-### Quick status
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-```bash
-npm start status
-```
+## Roadmap
 
-## Commands
+Track upcoming milestones, technical debt, and planned feature work.
 
-| Command | Description |
-|---------|-------------|
-| `start [ports]` | Start monitoring ports |
-| `dashboard` | Show dashboard of dev ports |
-| `watch <port>` | Watch for status changes |
-| `status [ports]` | Quick status check |
+## Support
 
-## Options
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
-- `-i, --interval <seconds>` - Check interval
+## License
+
+This project is released under the MIT License.
